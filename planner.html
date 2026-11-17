@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Planner | Hossen Taiwo Rauf</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <a class="brand" href="index.html">Hossen Rauf • Portfolio</a>
+      <nav aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a class="active" href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Academic Task Planner</h1>
+      <p>Organize your assignments, lab work, and exam revision tasks.</p>
+
+      <form id="planner-form" novalidate>
+        <div class="planner-row">
+          <div class="form-group">
+            <label for="task-title">Task Description</label>
+            <input
+              type="text"
+              id="task-title"
+              placeholder="e.g., Complete COS 106 Term Project"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="task-course">Course Code</label>
+            <input type="text" id="task-course" placeholder="e.g., COS 106" />
+          </div>
+
+          <div class="form-group">
+            <label for="task-due">Due Date</label>
+            <input type="date" id="task-due" />
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn">Add Task</button>
+          </div>
+        </div>
+        <p id="planner-feedback" class="feedback" role="alert"></p>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>My Study Tasks (<span id="task-count">0</span>)</h2>
+      <ul id="task-list" class="task-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Hossen Taiwo Rauf — MIVA Open University (COS 106 Term Project)</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
